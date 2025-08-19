@@ -1,6 +1,6 @@
 body {
   font-family: "Poppins", sans-serif;
-  margin: 0;
+
   background: black;
 }
 .container {
@@ -15,6 +15,7 @@ header {
   color: white;
   line-height: 1.5;
   padding: 200px 0;
+  margin: 0;
 }
 header h1 {
   font-size: 50px;
@@ -61,6 +62,7 @@ header .blink {
   padding: 16px 32px;
   flex-wrap: wrap;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  box-sizing: border-box;
 }
 .home-link a {
   color: white;
@@ -79,7 +81,7 @@ header .blink {
   padding: 6px;
 }
 .links a:hover {
-  color: rgba(161, 159, 159, 0.6);
+  color: white;
   transition: 300ms all ease-in-out;
 }
 .row {
@@ -116,14 +118,21 @@ header .blink {
 .column a {
   text-decoration: none;
   text-align: center;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.6)
+  ) !important;
+  padding: 12px 18px !important;
+  color: white;
+  display: flex;
+  justify-content: center;
+  border-radius: 4px;
+  transition: all 300ms ease-in-out !important;
 }
 .column a:hover {
-  background: linear-gradient(rgba(0, 0, 0, 0.6));
-  color: white;
-  transition: 300ms all ease-in-out;
-  padding: 10px 10px;
-  border: none;
-  border-radius: 8px;
+  border: 1px solid #333 !important;
+  color: #333 !important;
+  background: white !important;
 }
 .first-section p {
   font-size: 14px;
